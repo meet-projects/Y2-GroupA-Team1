@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  color: #0c0c0c;
+  color: #0077b6;
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -19,6 +19,7 @@ body {
 
 .layout_padding2-bottom {
   padding-bottom: 75px;
+  background-color: #00b4d8;
 }
 
 .layout_padding-top {
@@ -45,10 +46,11 @@ body {
 .heading_container h2 {
   position: relative;
   font-weight: bold;
+  font-family: serif;
 }
 
 .heading_container h2 span {
-  color: #00c6a9;
+  color: #00b4d8;
 }
 
 .heading_container.heading_center {
@@ -101,7 +103,7 @@ a:focus {
 
 .header_section .header_top .contact_nav a {
   margin-right: 25px;
-  color: #555555;
+  color: #0077b6;
 }
 
 .header_section .header_top .contact_nav a i {
@@ -109,7 +111,7 @@ a:focus {
 }
 
 .header_section .header_bottom {
-  background-color: #00c6a9;
+  background-color: #0096c7;
 }
 
 .header_section .header_bottom .container-fluid {
@@ -139,7 +141,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
-  color: #252525;
+  color: #03045e;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -151,7 +153,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #252525;
+  color: #03045e;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -324,7 +326,7 @@ a:focus {
 }
 
 .slider_section .play_btn button {
-  background-color: #00c6a9;
+  background-color: #caf0f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,7 +353,7 @@ a:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #00c6a9;
+  background-color: #caf0f8;
   opacity: 1;
   border-radius: 100%;
   -webkit-transform: translate(-50%, -50%);
@@ -402,7 +404,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-  color: #00c6a9;
+  color: #caf0f8;
 }
 
 .slider_section .detail-box p {
@@ -655,7 +657,7 @@ background-color: grey ;}
 }
 
 .team_section {
-  background-color: #00c6a9;
+  background-color: #0077b6;
 }
 
 .team_section .heading_container {
@@ -707,7 +709,7 @@ background-color: grey ;}
 }
 
 .team_section .box .detail-box h6 {
-  color: #00c6a9;
+  color: #03045e;
 }
 
 .team_section .box .detail-box .social_box {
@@ -806,12 +808,12 @@ background-color: grey ;}
 
 .client_section .box .client_info .client_name h5 {
   font-weight: 600;
-  color: #00c6a9;
+  color: #03045e;
 }
 
 .client_section .box .client_info .client_name h6 {
   margin-bottom: 0;
-  color: #bfc0c0;
+  color: #03045e;
   font-weight: normal;
   font-size: 15px;
 }
@@ -828,7 +830,7 @@ background-color: grey ;}
 .client_section .carousel-control-next {
   width: 45px;
   height: 125px;
-  background-color: #00c6a9;
+  background-color: #03045e;
   opacity: 1;
   font-size: 28px;
   font-weight: bold;
@@ -863,29 +865,29 @@ background-color: grey ;}
 
 .contact_section .form_container input {
   width: 100%;
-  border: 1px solid #00c6a9;
+  border: 1px solid #03045e;
   height: 50px;
   margin-bottom: 25px;
   padding-left: 15px;
   background-color: transparent;
   outline: none;
-  color: #101010;
+  color: #03045e;
 }
 
 .contact_section .form_container input::-webkit-input-placeholder {
-  color: #00c6a9;
+  color: #0077b6;
 }
 
 .contact_section .form_container input:-ms-input-placeholder {
-  color: #00c6a9;
+  color: #0077b6;
 }
 
 .contact_section .form_container input::-ms-input-placeholder {
-  color: #00c6a9;
+  color: #0077b6;
 }
 
 .contact_section .form_container input::placeholder {
-  color: #00c6a9;
+  color: #0077b6;
 }
 
 .contact_section .form_container input.message-box {
@@ -897,14 +899,14 @@ background-color: grey ;}
   text-transform: uppercase;
   display: inline-block;
   padding: 15px 65px;
-  background-color: #00c6a9;
+  background-color: #0077b6;
   color: #ffffff;
   border-radius: 0;
   font-weight: bold;
 }
 
 .contact_section .form_container button:hover {
-  background-color: #00937d;
+  background-color: #48cae4;
 }
 
 .contact_section .img-box img {
@@ -969,24 +971,24 @@ background-color: grey ;}
 }
 
 .info_section .info_form form input::-webkit-input-placeholder {
-  color: #9c9c9c;
+  color: #90e0ef;
 }
 
 .info_section .info_form form input:-ms-input-placeholder {
-  color: #9c9c9c;
+  color: #90e0ef;
 }
 
 .info_section .info_form form input::-ms-input-placeholder {
-  color: #9c9c9c;
+  color: #90e0ef;
 }
 
 .info_section .info_form form input::placeholder {
-  color: #9c9c9c;
+  color: #90e0ef;
 }
 
 .info_section .info_form form button {
   background-color: transparent;
-  color: #00c6a9;
+  color: #90e0ef;
   margin-top: 15px;
   text-transform: uppercase;
   font-size: 15px;
@@ -1011,7 +1013,7 @@ background-color: grey ;}
   left: 0;
   width: 15px;
   height: 15px;
-  background-color: #00c6a9;
+  background-color: #90e0ef;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -1114,7 +1116,7 @@ background-color: grey ;}
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #00c6a9;
+  color: #023e8a;
   font-size: 24px;
   margin-right: 10px;
 }
