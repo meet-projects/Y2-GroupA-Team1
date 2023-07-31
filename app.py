@@ -9,10 +9,11 @@ app.config['SECRET_KEY'] = 'super-secret-key '
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('new_index.html')
 
-
-#Code goes above here
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
