@@ -743,7 +743,7 @@ section {
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ade8f4;
+  background-color: #A9D6E5;
 }
 
 /*--------------------------------------------------------------
@@ -1079,7 +1079,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: yellow;
+  background-color: #5cb874;
 }
 
 .portfolio-details .portfolio-info {
@@ -1241,7 +1241,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #90e0ef;
+  background: grey;
   color: #fff;
 }
 

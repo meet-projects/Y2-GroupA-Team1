@@ -50,7 +50,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #00b4d8;
+  color: #097b91;
 }
 
 .heading_container.heading_center {
@@ -668,7 +668,7 @@ font-weight: bold;
 }
 
 .team_section {
-  background-color: #0077b6;
+  background-color: #bfdbf7;
 }
 
 .team_section .heading_container {
@@ -886,19 +886,19 @@ font-weight: bold;
 }
 
 .contact_section .form_container input::-webkit-input-placeholder {
-  color: #0077b6;
+  color: white;
 }
 
 .contact_section .form_container input:-ms-input-placeholder {
-  color: #0077b6;
+  color: white;
 }
 
 .contact_section .form_container input::-ms-input-placeholder {
-  color: #0077b6;
+  color: white;
 }
 
 .contact_section .form_container input::placeholder {
-  color: #0077b6;
+  color: white;
 }
 
 .contact_section .form_container input.message-box {
