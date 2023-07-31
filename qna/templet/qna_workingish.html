@@ -1,0 +1,43 @@
+<!-- templates/qna.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questions and Answers</title>
+</head>
+<body>
+    <h1>Questions and Answers</h1>
+    <ul>
+        {% for entry in entries %}
+        <li>
+            <strong>Question:</strong> {{ entry.question }}
+            <br>
+            <strong>Answer:</strong> {{ entry.answer }}
+            <br>
+            <button class="reply-btn" data-question-id="{{ loop.index0 }}">Reply</button>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <form action="/reply" method="post" id="reply-form" style="display: none;">
+        <label for="reply">Your Reply:</label>
+        <textarea id="reply" name="reply" rows="4" required></textarea>
+
+        <input  type="hidden" id="question-id" name="question_id">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const replyButtons = document.querySelectorAll('.reply-btn');
+        const replyForm = document.getElementById('reply-form');
+        const questionIdInput = document.getElementById('question-id');
+
+        replyButtons.forEach((button) => {
+            button.addEventListener('click', (event) => {
+                const questionId = button.getAttribute('data-question-id');
+                replyForm.style.display = 'block';
+                questionIdInput.value = questionId;
+            });
+        });
+    </script>
+</body>
+</html>
