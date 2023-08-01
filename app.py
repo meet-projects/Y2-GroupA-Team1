@@ -9,7 +9,7 @@ app.config['SECRET_KEY'] = 'super-secret-key '
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('new_index.html')
 
 @app.route('/about')
 def about():
