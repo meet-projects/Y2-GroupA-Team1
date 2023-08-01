@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color:white;
+    background-color:lightblue;
     background-image: url(https://static.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg);
     background-size: cover;
     background-position: center;
@@ -144,7 +144,7 @@ body {
     color:#4169e1;
   }
   .whiteTr{
-    color:white;
+    color:lightblue;
     
   }
   .whiteTr th:hover{
