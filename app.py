@@ -15,5 +15,9 @@ def home():
 def about():
     return render_template('about.html')
 
+@app.route('/apply')
+def apply():
+    return render_template('apply.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
