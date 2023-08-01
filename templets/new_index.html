@@ -16,6 +16,17 @@
   <title>Tech2Peace</title>
 
 
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="static/carrousel_static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/carrousel_static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="static/carrousel_static/css/style.css">
+
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
 
@@ -101,7 +112,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/home">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Q&A</a></li>
           <li><a class="nav-link scrollto" href="#services">Our Impact</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Media</a></li>
@@ -187,7 +198,7 @@
 
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3>Tech2Peace provides high-tech and entrepreneurial training alongside conflict dialogue to young Palestinians and Israelis. In partnership with leading organizations like Google for Startups, Microsoft, and MIT, we use conflict dialogue and team-building activities to create a safe space for young people of all backgrounds and beliefs to meet, express their beliefs, and work with the "other side".</h3>
+            <h3>Tech2Peace provides high-tech and entrepreneurial training alongside conflict dialogue to young Palestinians and Israelis. In partnership with leading organizations like Google for Startups, Microsoft, and MIT, we use conflict dialogue and team-building activities to create a safe space for young people of all backgrounds and beliefs to meet, express their beliefs, and work with the "other side"</h3>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
             <a class="cta-btn align-middle" href="/apply">Apply now!</a>
@@ -198,250 +209,81 @@
     </section><!-- End Cta Section -->
 <!-- team section -->
 
-  <section class="team_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Tech2Peace <span>in the news!</span>
-        </h2>
-      </div>
-      <div class="carousel-wrap ">
-        <div class="owl-carousel team_carousel">
-                        
-
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <a href="https://www.timesofisrael.com/safe-crossing-israeli-palestinian-seek-smoother-transfer-of-patients-and-info/"><img src="static/images/news4.webp" alt="" /></a>
-              </div>
-              <div class="detail-box">
-                <h5>
-                  The Israel Times 
-                </h5>
-                <h6>
-                  Safe crossing: Israeli, Palestinian seek smoother transfer of patients and info
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <a href="https://www.jpost.com/Israel-News/Jews-and-Arabs-study-hi-tech-together-in-Yeroham-564752"><img src="static/images/news3.webp" alt="" /></a>
-              </div>
-              <div class="detail-box">
-                <h5>
-                  The Jerusalem Post
-                </h5>
-                <h6>
-                  Jews and Arabs study hi-tech together in Yeroham                                                     
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <a href="https://www.forbes.com/sites/melissarowley/2021/06/08/meet-two-palestinian--israeli-women-building-peace-through-tech-training--dialog/?sh=6ac115e05149"><img src="static/images/news6.webp" alt="" /></a>
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Forbes
-                </h5>
-                <h6>
-                  Meet Two Palestinian And Israeli Women Building Peace Through Tech Training And Dialog
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <a href="https://www.bbc.com/news/business-48053200?fbclid=IwAR0YuC79KuwPZinmawSjb7LTbtqw-yA2NASRiBC2AkZspAi-ryxpuFnqXIc"><img src="static/images/news7.webp" alt="" /></a>
-              </div>
-              <div class="detail-box">
-                <h5>
-                  BBC News
-                </h5>
-                <h6>
-                  How tech is bringing Israelis and Palestinians together          
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <a href="https://wired.me/technology/these-labs-make-tech-to-promote-hope-not-hostility/?fbclid=IwAR1Xfbmi7SI3RTOXY6v_uBqJCLpZeIBmGbg6svaA0I4r2vueoXdK7ajk4Zc"><img src="static/images/news1.jpg" alt="" /></a>
-              </div>
-              <div class="detail-box">
-                <h5>
-                  WIRED
-                </h5>
-                <h6>
-                  These labs make tech to promote hope, not hostility                    
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end team section -->
-    <!-- ======= Portfolio Section ======= -->
-   <!--  <section id="portfolio" class="portfolio">
+  <section class="ftco-section">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
         <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
+          <div class="col-md-12 text-center">
+            <h2 class="heading-section mb-5">Tech2Peace in the News!</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="featured-carousel owl-carousel">
+              <div class="item">
+                <div class="work">
+                  <div class="img d-flex align-items-end justify-content-center" style="background-image: url(static/carrousel_static/images/news3.webp);">
+                    <img href="static/images/work-1.jpg">
+                    <div class="text w-100">
+                      <span class="cat">Web Design</span>
+                      <h3><a href="#">The Jerusalem Post</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div class="img d-flex align-items-end justify-content-center" style="background-image: url(static/carrousel_static/images/news5.webp);">
+                    <div class="text w-100">
+                      <span class="cat">Web Design</span>
+                      <h3><a href="#">No Camels</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div class="img d-flex align-items-end justify-content-center" style="background-image: url(static/carrousel_static/images/news6.webp);">
+                    <div class="text w-100">
+                      <span class="cat">Web Design</span>
+                      <h3><a href="#">Forbes</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div class="img d-flex align-items-end justify-content-center" style="background-image: url(static/carrousel_static/images/news4.webp);">
+                    <div class="text w-100">
+                      <span class="cat">Web Design</span>
+                      <h3><a href="#">The Israel Times</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div class="img d-flex align-items-end justify-content-center" style="background-image: url(static/carrousel_static/images/news1.jpg);">
+                    <div class="text w-100">
+                      <span class="cat">Web Design</span>
+                      <h3><a href="#">WIRED</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div class="img d-flex align-items-end justify-content-center" style="background-image: url(static/carrousel_static/images/news7.webp);">
+                    <div class="text w-100">
+                      <span class="cat">Web Design</span>
+                      <h3><a href="#">BBC News</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="static/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="static/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="static/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="static/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="static/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="static/assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="static/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="static/assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="static/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="static/assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="static/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="static/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="static/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="static/assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="static/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="static/assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="static/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="static/assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section> --><!-- End Portfolio Section --> 
+    </section>
+
 
   
 
@@ -539,6 +381,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>  
   <!-- custom js -->  
   <script src="static/js/custom.js"></script>
+
+
+<script src="static/carrousel_static/js/jquery.min.js"></script>
+    <script src="static/carrousel_static/js/popper.js"></script>
+    <script src="static/carrousel_static/js/bootstrap.min.js"></script>
+    <script src="static/carrousel_static/js/owl.carousel.min.js"></script>
+    <script src="static/carrousel_static/js/main.js"></script>
 
   <!-- Template Main JS File -->
   <script src="static/assets/js/main.js"></script>
