@@ -574,6 +574,9 @@ a:focus {
   content: "\f106";
 }
 
+.about_section {
+background-color: grey ;}
+
 .about_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -586,16 +589,16 @@ a:focus {
 
 .about_section .detail-box p {
   color: #999;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #252525;
+  background-color: red;
   color: #ffffff;
   border-radius: 5px;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 .about_section .detail-box a:hover {
@@ -911,6 +914,8 @@ a:focus {
 .info_section {
   background-color: #252525;
   color: #ffffff;
+  height: 150px;
+
 }
 
 .info_section .info_top {
@@ -929,11 +934,11 @@ a:focus {
 .info_section .info_top .info_logo a {
   display: block;
   background-color: #ffffff;
-  padding: 20px 35px;
+  padding:20px 35px;
 }
 
 .info_section .info_top .info_logo a img {
-  width: 55px;
+  width: 10px;
 }
 
 .info_section .info_form {
@@ -990,6 +995,7 @@ a:focus {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
+
 
 .info_section h5 {
   text-transform: uppercase;

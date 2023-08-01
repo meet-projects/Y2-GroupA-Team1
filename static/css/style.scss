@@ -876,6 +876,46 @@ a:focus {
 
 
 // info section
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column a:hover {
+  text-shadow: 2px 2px 10px #000000;
+  
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline; }
+
+  filter: dropshadow(color=#000000, offx=2, offy=2);
+  color: #0056b3;
+    text-decoration: underline;
+}
+
+.mb-1 {
+color: rgba(255,255,255,.4);
+    background-color: transparent;
+    margin-bottom: -8px;
+    padding-bottom: 0;
+    font-family: Proxima nova alt,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: none;
+    transition: background-color .225s;
+    transform: translate(0);}
+    
 .info_section {
   background-color: $primary2;
   color: $white;
