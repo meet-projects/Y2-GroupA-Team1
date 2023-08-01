@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question and Answer</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='question.css') }}">
+</head>
+<body>
+  <h1>Question and Answer</h1>
+  <ul>
+    {% for entry in entries %}
+      <li>
+        <strong>Question:</strong> {{ entry['question'] }} <br>
+        <strong>Answer:</strong> {{ entry['answer'] }}
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
