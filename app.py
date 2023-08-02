@@ -13,7 +13,7 @@ firebaseConfig = {
   "databaseURL":"https://events-740e0-default-rtdb.europe-west1.firebasedatabase.app/"
 }
 firebase = pyrebase.initialize_app(firebaseConfig)
-auth=firebase.auth()
+
 db =firebase.database()
 
 Config = {
@@ -27,7 +27,7 @@ Config = {
   "databaseURL":'https://questions-and-answers-145b9-default-rtdb.europe-west1.firebasedatabase.app/'
 }
 firebase = pyrebase.initialize_app(Config)
-auth=firebase.auth()
+
 db1=firebase.database()
 app = Flask(__name__, template_folder='templets', static_folder='static')
 app.config['SECRET_KEY'] = 'super-secret-key '
@@ -182,7 +182,7 @@ events = [
     "Visiting a zoo or aquarium",
     "Attending a poetry reading",
     "Solving escape room puzzles",
-    "Going to a farmers' market"
+    "Techcon in tehinion university"
 ]
 
 @app.route("/postq", methods=["GET"])
@@ -227,4 +227,5 @@ def create_fake_events(events):
         db.child("events").child(day).push(events[day-1])
 
 if __name__ == '__main__':
+    
     app.run(debug=True, port=5003)
