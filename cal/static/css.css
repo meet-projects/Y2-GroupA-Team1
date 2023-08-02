@@ -75,7 +75,7 @@ body {
   }
   .front{
     text-transform:uppercase;
-    background-color:#232227;
+    background-color:lightblue;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
