@@ -15,6 +15,20 @@ firebaseConfig = {
 firebase = pyrebase.initialize_app(firebaseConfig)
 auth=firebase.auth()
 db =firebase.database()
+
+Config = {
+  "apiKey": "AIzaSyAMng7Xrimcf8DdC-oeSD1iKhHa2aFw5nM",
+  "authDomain": "questions-and-answers-145b9.firebaseapp.com",
+  "projectId": "questions-and-answers-145b9",
+  "storageBucket": "questions-and-answers-145b9.appspot.com",
+  "messagingSenderId": "1041152034637",
+  "appId": "1:1041152034637:web:c4d0b370d55a9dbd3f1904",
+  "measurementId": "G-6J5HH8BP8Y",
+  "databaseURL":'https://questions-and-answers-145b9-default-rtdb.europe-west1.firebasedatabase.app/'
+}
+firebase = pyrebase.initialize_app(Config)
+auth=firebase.auth()
+db1=firebase.database()
 app = Flask(__name__, template_folder='templets', static_folder='static')
 app.config['SECRET_KEY'] = 'super-secret-key '
 
@@ -170,6 +184,44 @@ events = [
     "Solving escape room puzzles",
     "Going to a farmers' market"
 ]
+
+@app.route("/postq", methods=["GET"])
+def index():
+    return render_template("post.html")
+
+@app.route("/post_question", methods=["POST"])
+def post_question():
+    question = request.form["question"]
+    
+    # Save the question to Firebase Firestore
+    question=db1.child("qna").push({"question": question, "answer": "",'UID':""})
+    # print(question['name'])
+    UID=question['name']
+    db1.child("qna").child(UID).update({'UID':UID})
+    return redirect(url_for('qna'))
+# def reply():
+@app.route("/reply", methods=["POST"])
+def reply():
+    print('hi')
+    reply_text = request.form["reply"]
+    question_id = request.form["question_id"]
+    print(question_id)
+
+    # Create a new "reply" entry for the question in Firebase Realtime Database
+    print(db1.child('qna').child(question_id).get().val())
+    db1.child("qna").child(question_id).update({"answer": reply_text})
+    
+    return redirect(url_for('qna'))
+@app.route("/qna", methods=["GET", "POST"])
+def qna():
+    entries = []
+    # Retrieve all questions from Firebase Firestore
+    questions_ref = db1.child("qna").get()
+    for question in questions_ref:
+        entries.append(question.val())
+    return render_template("Q&A.html", entries=entries)
+    
+
 def create_fake_events(events):
     for day in range(1,32):
         db.child("events").child(day).push(events[day-1])

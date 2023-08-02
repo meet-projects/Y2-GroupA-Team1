@@ -17,7 +17,7 @@ firebaseConfig = {
 }
 firebase = pyrebase.initialize_app(firebaseConfig)
 auth=firebase.auth()
-db =firebase.database()
+db1=firebase.database()
 
 @app.route("/", methods=["GET"])
 def index():
@@ -28,11 +28,11 @@ def post_question():
     question = request.form["question"]
     
     # Save the question to Firebase Firestore
-    question=db.child("qna").push({"question": question, "answer": "",'UID':""})
+    question=db1.child("qna").push({"question": question, "answer": "",'UID':""})
     # print(question['name'])
     UID=question['name']
-    db.child("qna").child(UID).update({'UID':UID})
-    return redirect("/qna")
+    db1.child("qna").child(UID).update({'UID':UID})
+    return redirect(url_for('qna')
 
 
 # def reply():
@@ -44,15 +44,15 @@ def reply():
     print(question_id)
 
     # Create a new "reply" entry for the question in Firebase Realtime Database
-    print(db.child('qna').child(question_id).get().val())
-    db.child("qna").child(question_id).update({"answer": reply_text})
+    print(db1.child('qna').child(question_id).get().val())
+    db1.child("qna").child(question_id).update({"answer": reply_text})
     
     return redirect("/qna")
 @app.route("/qna", methods=["GET", "POST"])
 def qna():
     entries = []
     # Retrieve all questions from Firebase Firestore
-    questions_ref = db.child("qna").get()
+    questions_ref = db1.child("qna").get()
     for question in questions_ref:
         entries.append(question.val())
     return render_template("qna.html", entries=entries)

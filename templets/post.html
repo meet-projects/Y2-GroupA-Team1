@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question and Answer</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/question.css') }}">
+</head>
+<body>
+  <h1>Welcome to the Question and Answer page</h1>
+  <form action="/post_question" method="POST">
+    <label for="question">Your question:</label>
+    <input type="text" id="question" name="question" required>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

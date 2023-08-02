@@ -1,3 +1,4 @@
+<!-- templates/qna.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,12 +8,6 @@
 <body>
     <h1>Questions and Answers</h1>
     
-    <form action="/post_question" method="POST">
-        <label for="question">Your question:</label>
-        <input type="text" id="question" name="question" required>
-        <input type="submit" value="Submit">
-    </form>
-
     <ul>
         {% for entry in entries %}
         <li>
@@ -21,7 +16,7 @@
             <strong>Answer:</strong> {{ entry.answer }}
             <br>
             <button class="reply-btn" data-question-id="{{ entry.UID }}">Toggle Reply</button>
-            <form action="/reply" method="post" class="reply-form" style="display: none;">
+            <form action="{{ url_for('reply') }}" method="post" class="reply-form" style="display: none;">
                 <label for="reply">Your Reply:</label>
                 <textarea id="reply" name="reply" rows="4" required></textarea>
                 <input type="hidden" value="{{ entry.UID }}" name="question_id">
