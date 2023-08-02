@@ -26,6 +26,16 @@
         {% endfor %}
     </ul>
 
+    <!-- Add a button to post another question -->
+    <form action="/post_question" method="POST">
+        <label for="question">Post another question:</label>
+        <input type="text" id="question" name="question" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Add a button to go back home (replace "home_url" with the actual URL for your homepage) -->
+    <a href="{{ home_url }}"><button>Go Back Home</button></a>
+
     <script>
         const replyButtons = document.querySelectorAll('.reply-btn');
         const replyForms = document.querySelectorAll('.reply-form');
